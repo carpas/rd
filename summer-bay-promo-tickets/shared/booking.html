@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ResortDaddy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="orlando/img/favicon.png">
+
+        <meta charset="UTF-8">
+        <meta name="title" content="">
+        <meta name="description" content="">
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                                                      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                                                                                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                                                                                                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+ })(window,document,'script','dataLayer','GTM-NDMRTKD');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132398788-1"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ gtag('config', 'UA-132398788-1', { 'optimize_id': 'GTM-MFVRXXB'});
+ window._gaID = 'UA-132398788-1';
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+ !function(f, b, e, v, n, t, s) {
+     if (f.fbq) return;
+     n = f.fbq = function() {
+         n.callMethod ?
+         n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+     };
+     if (!f._fbq) f._fbq = n;
+     n.push = n;
+     n.loaded = !0;
+     n.version = '2.0';
+     n.queue = [];
+     t = b.createElement(e);
+     t.async = !0;
+     t.src = v;
+     s = b.getElementsByTagName(e)[0];
+     s.parentNode.insertBefore(t, s);
+ }(window, document, 'script',
+   'https://connect.facebook.net/en_US/fbevents.js');
+ fbq.disablePushState = true;
+</script>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+ fbq('init', '1273300762809697');
+ fbq('init', 'NONE');
+ fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=&amp;ev=PageView&amp;noscript=1"/>
+</noscript>
+<!-- End Facebook Pixel Code -->
+
+
+        <link href="fonts.googleapis.com/css-family=Montserrat-400,500,600,700,800,900.html" rel="stylesheet">
+        <link href="shared/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="shared/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="shared/css/caleran.min.css" rel="stylesheet" type="text/css"/>
+        <link href="shared/css/formValidation.min.css" rel="stylesheet" type="text/css"/>
+        <link href="shared/css/intlTelInput.min.css" rel="stylesheet" type="text/css"/>
+        <link href="orlando/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="shared/css/proofshopper.css" rel="stylesheet" type="text/css"/> 
+    </head>
+    <body>
+
+          <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDMRTKD"
+                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+          <div id="proofshopper">
+    <div id="float-alerts" data-product="Exploria Express at Summer Bay Resort">
+      <proofshopper-component ref="proofshop"></proofshopper-component>
+    </div>
+    <div id='shopper-img' data-img="/shared/img/resortdaddylogo.svg"></div>
+      <span class='alert-animated-test'></span>
+</div>
+<script type="text/x-template" id="proofshopper-template">
+<div>
+    <div class="" v-for="shopper in shoppers">
+        <div class="container-alerts">
+            <div class="alert  d-flex alert-dismissible fade show"  role="alert">
+                <img class="alert-img" v-bind:src="shopper.image">
+                <div class="alert-content d-flex flex-column">
+                    <strong>{{ shopper.firstName }} {{ shopper.lastName }} </strong>
+                    <small class="subtitle">{{ shopper.action }}!</small>
+                    <small><a href="" class="alert-link ">{{ shopper.minutes_ago }} minute(s) ago.</a></small>
+                </div>
+                <button class="close" type="button"  >
+                    <span aria-hidden="true" v-on:click="remove">✕</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</script>
+
+        <script>
+         fbq('track', 'AddToCart');
+        </script>
+        <div id="search">
+            <div class="info-box text-center checking-avail" id="checking-availability">
+                <p class="ib-maintitle">Checking Availability... </p>
+                <p> <img src="shared/orange-spinner.gif" /> </p>
+            </div>
+
+        </div>
+        <!-- popup 2 content-->
+        <div id="booking" class="d-flex justify-content-center d-none">
+            <div class="info-box text-center col-lg-4 col-xl-4 m-3">
+                <p class="ib-maintitle">Availability Calendar</p>
+                <p class="ib-sectitle ib-osectitle text-left">Preferred Travel Dates</p>
+                <form id="reserveForm" method="POST" action="booking.html">
+                    <input type="hidden" name="offer_id" value="2" />
+                    <input type="hidden" id="calendar1" class="d-none" name="reservation_date"></input>
+
+                    <div class="form-check text-left mt-4 mb-4">
+                        <input class="form-check-input" type="checkbox" value="" id="have-dates" onclick="hideCalendar();">
+                        <label class="form-check-label" for="have-dates" >select dates later</label>
+                    </div>
+
+                    <p class="ib-sectitle ib-osectitle text-left" id="select-travelers">Select travelers</p>
+                    <div class="form-box text-center p-0">
+                        <div class="d-flex justify-content-left travelers-box">
+                            <div class="select-box">
+                                <p>Adults</p>
+                                <div class="select-bg">
+                                    <select name="adults" class="">
+                                        <option value="1">1</option>
+                                        <option value="2" selected="selected">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                            </div>
+                            <div class="select-box ml-2 mr-2">
+                                <p>Kids</p>
+                                <div class="select-bg">
+                                    <select name="children" class="">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                    </select>
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                            </div>
+                            <!--div class="select-box">
+                                <p>Extra Night</p>
+                                <div class="select-bg">
+                                    <select name="extra_nights" class="" id="">
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <span class="fa fa-chevron-down"></span>
+                                </div>
+                            </div-->
+                        </div>
+                        <div class="form-group">
+                            <p class="ib-sectitle ib-osectitle">Primary Traveler</p>
+                            <label for="fullname">Full Name</label>
+                            <input type="text" class="form-control" id="fullname-box1" name="full_name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-box1">Phone</label>
+                            <input  id="phone-box1" class="form-control" type="tel" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input  class="form-control" type="email" id="email-box1" name="email" placeholder="name@example.com">
+                        </div>
+                    </div>
+                    <div class="fb-messenger-checkbox"  
+                         origin=127.0.0.1
+                         page_id="1677817182322715"
+                         messenger_app_id="953967464792672"
+                        user_ref=8abf37a1261310d23ac61d4ef0c9bb18
+                        allow_login="true"
+                        size="small"
+                        skin="light>"
+                        center_align="true">
+                    </div>
+                    <!--button type="button" class="btn btn-green" data-dismiss="modal" data-target="#reserveModal">RESERVE IT NOW</button-->
+                    <button type="submit" class="btn btn-green m-3 pt-2 pb-2 pr-3 pl-3">RESERVE IT NOW</button>
+
+                </form>
+                <!--div class="silver-bordered-box">
+                    <p class="ib-sectitle">don’t have dates? don’t worry</p>
+                    <p class="mt-3"><a href="#"> Click here</a> lock in the price for only $99 and call back to travel within the next 12 months”</p>
+                </div-->
+
+                <div class="row payment-info justify-content-center">
+                            <img class="sec-logo" src="shared/img/verisign.svg" alt="">
+                            <img class="sec-logo" src="shared/img/mcfee.svg" alt="">
+                            <div class="ccard"></div> <!--line-->
+                </div>
+            <!--End popup 2 content-->
+
+
+        </div>
+
+        </div> <!-- #booking div -->
+
+        
+        <div class="bottom-box" style="text-align: center; font-size: 10px; ">
+        <p style="color: gray;">This advertising material is being used for the purpose of soliciting sales of vacation ownership interest or plans.</p>
+                <p style="color: gray;">Your privacy and protection of your personal information is of our utmost importance, personal data is never shared to third parties and we use SSL encryption the highest level of security. By clicking button you consent to receive email, SMS texts and telemarketing calls from Automatic telephone dialing system on behalf of Resort Daddy or its affiliates to the Cellular/Landline telephone you have provided regardless of that number being on any Do Not Call registry. Your consent does not require purchase, standard cellular rates apply.</p>
+            </div>
+
+        <script src="shared/js/intlTelInput.min.js"></script>
+        <script src="code.jquery.com/jquery-3.3.1.min.js.html"></script>
+        <script src="shared/js/intlTelInput-jquery.min.js"></script>
+        <script src="shared/js/bootstrap.min.js"></script>
+        <script src="shared/js/jquery.countdown.min.js"></script>
+        <script src="shared/js/moment.min.js"></script>
+        <script src="shared/js/caleran.min.js"></script>
+        <script src="cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js.html"></script>
+        <script src="shared/js/FormValidation.full.min.js"></script>
+        <script src="shared/js/FormValidation.Bootstrap.min.js"></script>
+        <script src="shared/libs/vue.min.js"></script>
+        <script src="shared/proofshopper.js"></script> 
+        <script type="text/javascript">
+
+        function hideCalendar(){
+            if( $('#have-dates').prop('checked') ) {
+                $('.caleran-inline').hide();
+            }else{
+                $('.caleran-inline').show();
+            }
+        }
+
+
+         var caleranConfig = {
+             inline: true,
+             showHeader: false,
+             showFooter: false,
+             isHotelBooking: true,
+             disabledRanges: [{
+                 start: moment().add(14,'days'),
+                 end:   moment().add(14, 'days')
+             }
+             ],
+             
+             onBeforeInit: function(caleran) {
+             },
+             onfirstselect: function(caleran, startDate) {
+                 var minAndMaxDate = startDate.add(4-1, 'days');
+                 caleran.setEnd(minAndMaxDate);
+
+
+                 caleran.globals.endSelected = true;
+                 caleran.globals.startSelected = false;
+                 caleran.updateInput();
+             },
+             onafterselect: function(caleran, startDate, endDate){
+                 caleran.config.maxDate = null;
+                 caleran.updateInput();
+             },
+
+         }
+         var currentDate = new Date();
+         if(currentDate.getDate()>15) {
+            //
+             caleranConfig.startDate =  moment().add(1, 'month').startOf('month');
+             caleranConfig.endDate =  moment().add(1, 'month').startOf('month');
+         }
+         else {
+            caleranConfig.minDate =  moment().add(14, 'days').calendar();
+           }
+
+         $("#calendar1").caleran(caleranConfig);
+
+         var inputPhone = document.querySelector("#phone-box1");
+         document.iti = window.intlTelInput(inputPhone, {
+             utilsScript: "/shared/js/utils.js",
+             initialCountry: "auto",
+             preferredCountries: ['US', 'CA'],
+             geoIpLookup: function(callback) {
+                 $.get('https://ipinfo.io', function() {}, "jsonp").always(function(resp) {
+                     var countryCode = (resp && resp.country) ? resp.country : "US";
+                     callback(countryCode);
+                 });
+             }
+         });
+
+         setTimeout(function() {
+             $('#booking').fadeIn("slow");
+             $('#booking').removeClass('d-none');
+             $('#checking-availability').fadeOut();
+         }, 1500);
+
+
+
+         document.addEventListener('DOMContentLoaded', function () {
+             _form = FormValidation.formValidation(
+                 document.getElementById('reserveForm'),
+                 {
+                     fields: {
+                         full_name: {
+                             validators: {
+                                 notEmpty: {
+                                     message: 'Full name can\'t be blank'
+                                 },
+                                 callback: {
+                                     callback: function(input){
+                                         if(!input.value.trim()){ return false; }
+                                         return input.value.trim().split(' ').length > 1;
+                                     },
+                                     message: 'Full name is required'
+                                 }
+                             }
+                         },
+                         phone: {
+                             validators: {
+                                 notEmpty: {
+                                 },
+                                 callback: {
+                                     message: 'Valid phone number is required',
+                                     callback: function(input){
+                                         return document.iti.isValidNumber();
+                                     }
+                                 }
+                             },
+                         },
+
+                         email: {
+                             validators: {
+                                 notEmpty: {
+                                 },
+
+                                 emailAddress: { }
+                             }
+                         },
+                     },
+                     plugins: {
+                         bootstrap: new FormValidation.plugins.Bootstrap(),
+                         trigger: new FormValidation.plugins.Trigger({event: 'blur'}),
+                         submitButton: new FormValidation.plugins.SubmitButton(),
+                         defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
+                         icon: new FormValidation.plugins.Icon({
+                             valid: 'fa fa-check',
+                             invalid: 'fa fa-times',
+                             validating: 'fa fa-refresh'
+                         }),
+                     },
+                 });
+         });
+        </script>
+
+
+        <script>
+         window.fbAsyncInit = function() {
+             FB.init({
+                 appId            : '953967464792672',
+                 autoLogAppEvents : true,
+                 xfbml            : true,
+                 version          : 'v3.2'
+             });
+         };
+
+         (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "https://connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+
+        </script>
+    </body>
+</html>

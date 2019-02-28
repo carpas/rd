@@ -1,0 +1,1404 @@
+.page-wrap{
+    background-color: #fbfaf5;
+    /*font-family: "Raleway", sans-serif;*/
+}
+
+.section-1 .header {
+    height: 100px;
+    overflow: hidden;
+    position:relative;
+}
+.section-1 .header .logo {
+    /*display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin-top: 25px;
+    margin-left: 70px;*/
+}
+.section-1 .header .logo img{
+    max-width: 90%;
+}
+.section-1 .header .satisfaction-seal {
+    /*top: -40px;
+    display: inline-block;
+    vertical-align: top;
+    right: 40px;
+    position: absolute;*/
+}
+.section-1 .header .satisfaction-seal img{
+    max-width: 100%;
+    top: -40px;
+    right: 10px;
+}
+
+.progress-bar .progress {
+    color: #a4a4a4;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0;
+    text-align: center;
+    /*line-height: 40px;*/
+    float: left;
+    height: auto;
+    box-sizing: unset;
+    border-radius: 0;
+    width: 28%;
+}
+.progress-bar .progress::after,.progress-bar .progress::before {
+    box-sizing: unset;
+}
+
+.section-1 h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    line-height: 45px;
+    font-size: 36px;
+    color:#35024f;
+}
+.number-field .error-message {
+    position: absolute;
+    bottom: -18px;
+    color: #b03576;
+    left: 11px;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORMS*/
+.half-split {
+    width: 48%;
+}
+.fields {
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    position: relative;
+}
+label {
+    font-size: 24px;
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    padding-left: 10px;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+input[type=text], input[type=tel], input[type=email],select{
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    padding-left: 10px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    padding-top: 20px;
+    position: relative;
+    border: 1px solid #989898;
+    z-index: 1;
+}
+select {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 95% -92px;
+    background-position: right 10px top -92px;
+    background-repeat: no-repeat;
+}
+.has-success select {
+    border: 1px solid grey !important;
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 97% 16px;
+    background-position: right 10px top 16px;
+    background-repeat: no-repeat;
+}
+.has-error select, .has-success.has-error select {
+    border: 1px solid grey !important;
+    border-bottom: 5px solid #ff5e45 !important;
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 95% -40px;
+    background-position: right 10px top -40px;
+    background-repeat: no-repeat;
+}
+.has-success label,
+label.active {
+    font-style: normal;
+    font-size: 17px;
+    top: 3px;
+    left:10px;
+    padding: 0;
+    color:#676767;
+    -webkit-transition-duration:.5s; /* Safari */
+    transition-duration:.5s;
+}
+span.help-block.form-error {
+    display: none;
+}
+.form-field-wrap {
+    padding: 0 25px;
+}
+.fields.half-field {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+.fields.half-field.left-field {
+    margin-right: 1.8%;
+}
+.form-field-wrap p {
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.long-label label {
+    font-size: 22px;
+}
+.long-label.has-success label, label.active{
+    font-size:17px;
+}
+button.button-submit {
+    width: 590px;
+    max-width: 100%;
+    border: none;
+    display: block;
+    outline: none;
+    margin: 20px auto;
+    /*font-family: "Raleway", sans-serif;*/
+    font-weight: 800;
+    color: white;
+    border-radius: 5px;
+    border-top: 2px solid white;
+    line-height: 90px;
+    font-size: 30px;
+    text-transform: uppercase;
+    background: #a3d842;
+    background: -webkit-linear-gradient(#a3d842, #4f9229);
+    background: -o-linear-gradient(#a3d842, #4f9229);
+    background: -moz-linear-gradient(#a3d842, #4f9229);
+    background: linear-gradient(#a3d842, #4f9229);
+    cursor:pointer;
+}
+button.button-submit:active{
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Chrome, Safari, Opera */
+    transform: scale(0.9);
+    -webkit-transition-duration: .5s; /* Safari */
+    transition-duration: .5s;
+}
+
+
+
+
+
+/*PAYMENT*/
+/*#payment-wrap .progress-bar {*/
+    /*background: url(/shared/adex/images/progress-bar-3.jpg)center top no-repeat;*/
+    /*height: 45px;*/
+/*}*/
+#payment-wrap img.cc-logos {
+    display: block;
+    margin: 20px auto;
+}
+#payment-wrap .bar {
+    background-color: lightgrey;
+    border: 1px solid grey;
+    width: 580px;
+    max-width: 100%;
+    margin: 20px auto;
+    height: 20px;
+}
+#payment-wrap .bar-fill {
+    height: 100%;
+    background-color: #b03576;
+}
+#payment-wrap .countdown p {
+    font-size: 17px;
+    display: inline-block;
+    width: 580px;
+    max-width: 100%;
+    text-align: center;
+    padding: 0px 30px;
+}
+#payment-wrap .product-wrap {
+    border: 5px solid lightgrey;
+    border-radius: 10px;
+    width: 580px;
+    max-width: 100%;
+    margin: 25px auto;
+    background-color: white;
+}
+#payment-wrap .product-image {
+    text-align: center;
+    width: 270px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -15px;
+}
+#payment-wrap .product-image img {
+    width: 250px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+#payment-wrap .product-info {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+    width: 280px;
+    max-width: 100%;
+    margin-left: 30px;
+}
+#payment-wrap .product-info .title {
+    font-size: 32px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+#payment-wrap .product-info .title span {
+    font-weight: normal;
+    display: block;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+#payment-wrap .prices {
+    padding: 20px 25px;
+    padding-bottom: 30px;
+    padding-top: 0;
+}
+#payment-wrap .price-breakdown {
+    line-height: 35px;
+}
+#payment-wrap .price-breakdown .label {
+    width: 400px;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+}
+#payment-wrap .price-breakdown .value {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 25px;
+}
+#payment-wrap .price-breakdown .divider {
+    border-bottom: 2px solid lightgrey;
+    margin: 10px 0;
+}
+#payment-wrap .total-bottles {
+    display: inline-block;
+    width: 100%;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+.progress-bar {
+    /*height: 40px;*/
+    width: 100%;
+    background-color: #cccccc;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    display: inline-block;
+}
+/*.progress-1.progress{
+    padding-right: 40px;
+    padding-left: 20px;
+}
+.progress-2.progress{
+    padding-right: 40px;
+    padding-left: 10px;
+}*/
+.progress-3.progress {
+   /* padding-left: 10px;*/
+    width:40%;
+}
+.progress-bar .progress.active {
+    color: white;
+}
+
+
+
+
+#shipping-wrap .progress-1.progress {
+    background: url("progress-bar-grey-orange.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+#shipping-wrap .progress-2.progress {
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/progress-bar-orange-grey.jpg")right top -9px no-repeat;
+    background-color: #ec6234;
+    background-size: 40px;
+}
+.custom-field.ddd {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+}
+.custom-field.telefone {
+    width: 66%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 2.4%;
+}
+
+#cart-wrap .progress-1.progress {
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/progress-bar-orange-grey.jpg")right top -9px no-repeat;
+    background-color: #ec6234;
+    background-size: 40px;
+}
+#cart-wrap .progress-2.progress {
+    background: url("progress-bar-grey-grey.jpg")right top -8px no-repeat;
+    background-size: 40px;
+}
+
+
+#payment-wrap .progress-1.progress {
+    background: url("progress-bar-grey-grey.jpg")right top -8px no-repeat;
+    background-size: 40px;
+}
+#payment-wrap .progress-2.progress {
+    background: url("progress-bar-grey-orange.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+#payment-wrap .progress-3.progress {
+    background-color: #ec6234;
+    padding-right: 26px;
+    margin-left: -2px;
+    margin-right: -1px;
+}
+#payment-wrap .billing-info {
+    display: none;
+}
+
+
+
+
+/*CHECKBOX*/
+.checkbox-wrap {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    margin-top: 6px;
+    margin-right: 2px;
+}
+.checkbox-wrap input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.checkbox-indicator {
+    height: 20px;
+    width: 20px;
+    background: rgba(0,0,0,.2);
+    border-radius: 4px;
+}
+.checkbox-wrap:hover input ~ .checkbox-indicator,
+.checkbox-wrap input:focus ~ .checkbox-indicator {
+    background:rgba(0,0,0,.3);;
+}
+.checkbox-wrap input:checked ~ .checkbox-indicator {
+    background: #ec6234;
+}
+.checkbox-indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+.checkbox-wrap input:checked ~ .checkbox-indicator:after {
+    display: block;
+}
+.checkbox-control .checkbox-indicator:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+}
+center.billing-checkbox span {
+    line-height: 32px;
+    font-size: 19px;
+    display: inline-block;
+    vertical-align: top;
+}
+center.billing-checkbox {
+    margin-bottom: 15px;
+}
+
+#thankyou-wrap{
+    position:relative;
+}
+#thankyou-wrap .section-wrap.sections.section-2 {
+    padding-bottom: 15px;
+    min-height: 605px;
+}
+
+
+
+/*VALIDATION*/
+.has-error input[type=email], .has-error input[type=text], .has-error input[type=tel]{
+    border: 1px solid grey !important;
+    border-bottom: 5px solid #ff5e45 !important;
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 110% -40px;
+    background-position: right -20px top -40px;
+    background-repeat: no-repeat;
+}
+.has-success.has-error input[type=text],.has-success.has-error input[type=tel],.has-success.has-error input[type=email]{
+    border: 1px solid grey !important;
+    border-bottom: 5px solid #ff5e45 !important;
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 110% -40px;
+    background-position: right -20px top -40px;
+     background-repeat: no-repeat;
+ }
+.has-success input[type=email], .has-success input[type=text], .has-success input[type=tel]{
+    border: 1px solid grey !important;
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 110% 15px;
+    background-position: right -20px top 15px;
+    background-repeat: no-repeat;
+}
+span.help-block.form-error {
+    display: none;
+}
+.dob-wrap {
+    position: relative;
+}
+.dob-wrap .fields {
+    display: inline-block;
+    vertical-align: top;
+}
+.form-inputs.fields.dob-year {
+    width: 25%;
+}
+.form-inputs.fields.dob-month {
+    width: 40%;
+    margin: 0 1%;
+}
+.form-inputs.fields.dob-day {
+    width: 20%;
+}
+label.dob-label {
+    margin: 5px 0;
+    position: relative;
+    top: 0;
+}
+.dob-year.has-success select,.dob-month.has-success select,.dob-day.has-success select{
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/arrow-dropdown.png")no-repeat;
+    background-position: 98% 15px;
+    background-size: 40px;
+}
+.dob-hidden-wrap .error-image{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+}
+.dob-hidden-wrap.has-success .error-image {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 3px 5px;
+    background-repeat: no-repeat;
+
+}
+.dob-hidden-wrap.has-error .error-image {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-size: 70px;
+    background-position: 3px -55px;
+    background-repeat: no-repeat;
+}
+.expiration-date {
+    position: relative;
+}
+.expiration-date .select-wrap.fields {
+    width: 43%;
+    margin-right: 2%;
+}
+.expiration-error {
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+.expiration-error .error-image {
+    background-size: 70px;
+    height: 50px;
+    width: 50px;
+}
+.expiration-error.has-success .error-image {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-position: 3px 5px;
+    background-repeat: no-repeat;
+}
+
+.expiration-error.has-error .error-image {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/icon-validation.png");
+    background-position: 3px -50px;
+    background-repeat: no-repeat;
+}
+
+
+.expiration-date .select-wrap.has-success select {
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/arrow-dropdown.png")no-repeat;
+    background-position: 98% 15px;
+    background-size: 40px;
+}
+div#card-image {
+    background-image: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/card-type.png");
+    background-position: 2px 2px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 75px;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+    right: 10px;
+}
+
+.card-number-type.visa #card-image {
+    background-position: 2px -315px;
+}
+.card-number-type.master #card-image {
+    background-position: 2px -422px;
+}
+.card-number-type.amex #card-image {
+    background-position: 2px -105px;
+}
+.card-number-type.diners_club_international #card-image {
+    background-position: 2px -158px;
+}
+.card-number-type.elo #card-image {
+    background-position: 2px -51px;
+}
+.card-number-type.hipercard #card-image {
+    background-position: 2px -211px;
+}
+.card-number-type.aura #card-image {
+    background-position: 2px -263px;
+}
+.card-number-type.discover #card-image {
+    background-position: 2px -528px;
+}
+.card-number-wrap.not-valid .card-number-type.has-success input, .card-number-type.has-error input{
+    background-position: 110% -40px;
+    background-position: right 59px top -40px;
+}
+.card-number-wrap.is-valid .card-number-type.has-success input,.card-number-wrap.not-valid .card-number-type.hipercard.has-success input {
+    background-position: 88% 15px;
+    background-position: right 59px top 15px;
+}
+
+.cvv-hint {
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/cvv.png")center top no-repeat;
+    position: absolute;
+    height: 50px;
+    width: 70px;
+    background-size: contain;
+    top: 10px;
+    right: 11px;
+    z-index:2;
+}
+.cvv-wrap.has-error input {
+    background-position: 110% -40px;
+    background-position: right 59px top -40px;
+}
+.cvv-wrap.has-success input {
+    background-position: 88% 15px;
+    background-position: right 59px top 15px;
+}
+
+
+
+
+
+#thankyou-wrap .progress-1.progress {
+    background: url("progress-bar-grey-grey.jpg")right top -8px no-repeat;
+    background-size: 40px;
+}
+#thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-orange.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+#thankyou-wrap .progress-3.progress {
+    background-color: #b03576;
+    padding-right: 97px;
+    margin-left: -2px;
+    margin-right: -1px;
+}
+#thankyou-wrap .button-submit {
+    width: 590px;
+    max-width: 100%;
+    border: none;
+    display: block;
+    outline: none;
+    margin: 20px auto;
+    font-weight: 500;
+    color: white;
+    border-radius: 5px;
+    border-top: 2px solid white;
+    border-color: coral;
+    line-height: 90px;
+    font-size: 30px;
+    text-transform: uppercase;
+    /** 
+    background: #a3d842;
+    background: -webkit-linear-gradient(#a3d842, #4f9229);
+    background: -o-linear-gradient(#a3d842, #4f9229);
+    background: -moz-linear-gradient(#a3d842, #4f9229);
+    background: linear-gradient(#a3d842, #4f9229); **/
+    background: #ec6187;
+    cursor: pointer;
+    margin-top: 0;
+    padding: 8px;
+
+}
+#thankyou-wrap .section-2 .content {
+    text-align: center;
+}
+#thankyou-wrap .header-top .top-section h1 {
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-weight: normal;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+    width: 580px;
+    max-width: 100%;
+    display: inline-block;
+}
+#thankyou-wrap .header-top .bottom-section h1 {
+    color: #b03576;
+    padding-top: 5px;
+    font-size: 36px;
+    display: inline-block;
+    line-height: 45px;
+}
+#thankyou-wrap .bottom-section p {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    font-size: 22px;
+    margin: 10px 0;
+}
+#thankyou-wrap .coupon {
+    width: 580px;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 5px dashed black;
+    background-color: #f0faff;
+    position: relative;
+    cursor: pointer;
+}
+
+#thankyou-wrap .bottle-wrap {
+    /*width: 240px;*/
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+#thankyou-wrap .bottle-wrap img.bottle {
+    width: 200px;
+    max-width: 100%;
+    /** margin: 10px 0; **/
+    margin: 65px 0;
+}
+#thankyou-wrap .bottle-amount-wrap {
+    background-color: #ed0d32;
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 60px;
+    padding: 3px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#thankyou-wrap .mid-circle {
+    border-radius: 60px;
+    border: dotted 3px white;
+    width: 64px;
+    height: 64px;
+}
+#thankyou-wrap .inner-circle {
+    border: 1px solid white;
+    width: 57px;
+    height: 57px;
+    border-radius: 50px;
+    margin-top: 3px;
+    margin-left: 3px;
+}
+#thankyou-wrap span.x-bottles {
+    margin-top: 10px;
+    display: block;
+    font-size: 27px;
+    line-height: 20px;
+}
+#thankyou-wrap span.bottles {
+    font-size: 11px;
+    line-height: 20px;
+    display: block;
+}
+#thankyou-wrap .percentage-wrap {
+    color: white;
+    background: url("purple-arrow.png")center top no-repeat;
+    width: 85px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 10px;
+    padding-top: 7px;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+#thankyou-wrap .percentage-wrap span {
+    font-size: 25px;
+    display: block;
+    padding-top: 2px;
+    line-height: 20px;
+}
+#thankyou-wrap .product-info {
+    display: inline-block;
+    vertical-align: top;
+    /*width: 340px;*/
+    width: 60%;
+    margin-left: -10px;
+    box-sizing: border-box;
+    padding-right: 10px;
+}
+#thankyou-wrap .coupon-wrap .line-1 {
+    background-color: #b03576;
+    color: white;
+    margin-top: 10px;
+    padding: 5px;
+    padding-top: 7px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight:bold;
+}
+#thankyou-wrap .product-info .line-2 {
+    color: #ec6187;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+    line-height: 1.2;
+}
+#thankyou-wrap .product-info .line-3 {
+    font-size: 40px;
+    font-weight: bold;
+    display: inline-block;
+}
+#thankyou-wrap .product-info .line-4 {
+    text-align: center;
+    margin-top: 5px;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-bottom: 1px solid grey;
+}
+#thankyou-wrap .product-info .line-5 {
+    font-weight: bold;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 5px;
+}
+#thankyou-wrap .product-info .line-5 span {
+    color: #ec6187;
+}
+#thankyou-wrap .product-info .line-6 {
+    color: #afb7ba;
+    margin-top: 5px;
+}
+#thankyou-wrap .product-info .line-6 strike {
+    margin-right: 10px;
+}
+#thankyou-wrap .product-info .line-7 {
+    margin: 8px;
+    line-height: 1.2;
+}
+#thankyou-wrap a.no-thanks {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+}
+#thankyou-wrap .scissors {
+    background: url("scissors.png")right top no-repeat;
+    height: 40px;
+    background-size: 70px;
+    width: 580px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: -14px;
+}
+
+/*RECEIPT*/
+
+#receipt-wrap .progress-bar {
+    background-color: #ef6234;
+    height: 35px;
+}
+#receipt-wrap .top-header p {
+    padding: 0 25px;
+    display: inline-block;
+    font-size: 16px;
+}
+#receipt-wrap .top-header a {
+    color: #ef6234;
+    text-decoration:none;
+}
+#receipt-wrap .receipt-wrap {
+    width: 580px;
+    max-width: 100%;
+    margin: 30px auto;
+    border: 2px solid black;
+    background: url("urn:scrapbook:download:error:http://127.0.0.1:9393/shared/adex/images/orange-splash-bg.jpg")center top -80px no-repeat;
+    background-color: white;
+    background-size: contain;
+}
+#receipt-wrap .product-info p {
+    display: inline-block;
+    width: 100%;
+}
+#receipt-wrap .product-info {
+    padding: 30px;
+    padding-top: 0;
+    font-size: 26px;
+}
+#receipt-wrap p.line-1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+#receipt-wrap p.line-4 {
+    margin-top: 20px;
+}
+#receipt-wrap p.line-6 {
+    margin-top: 20px;
+}
+#receipt-wrap p.line-10 {
+    border-bottom: 2px solid lightgrey;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+#receipt-wrap .product-info p span.label {
+    display: inline-block;
+    vertical-align: top;
+    width: 385px;
+    max-width: 100%;
+}
+#receipt-wrap .product-info p span.price {
+    display: inline-block;
+    vertical-align: top;
+}
+#receipt-wrap .product-image {
+    text-align: center;
+    padding-top: 30px;
+}
+#receipt-wrap .section-2 {
+    padding-bottom: 30px;
+}
+#receipt-wrap .divider {
+    border-top: 2px solid lightgrey;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/** customs for button submit **/
+#thankyou-wrap .button-submit {
+    margin: 0;
+    border: 1px solid white;
+}
+.button-submit .left {
+    border-right: 1px solid #fff;
+    padding-right: 15px;
+    float: left;
+    line-height: 50px;
+    font-size: 50px;
+    margin-top: 10px;
+
+
+}
+.button-submit span {
+    border-radius: 4px;
+    display: block;
+    line-height: 36px;
+    font-size: 30px;
+	  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.button-submit small {
+    font-size: 20px;
+    display: block;
+}
+.button-inside {
+    text-decoration: none;
+    color: white;
+    background-color:  #EC6187;
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+
+/** overrides for techninjas store **/
+.techninjas .logo { 
+    margin-top: 0px !important;
+ }
+
+.techninjas .button-inside {
+    background-color:  #3F2F3D;
+}
+
+ .techninjas #thankyou-wrap .product-info .line-5 span {
+    color: #BE2026;
+ } 
+
+
+.techninjas #thankyou-wrap .product-info .line-2 {
+    color: #BE2026;
+ } 
+
+.techninjas #thankyou-wrap .header-top .bottom-section h1 {
+    color: #BE2026;
+}
+
+.techninjas #thankyou-wrap .progress-3.progress {
+    background-color: #BE2026; 
+}
+
+.techninjas #thankyou-wrap .coupon-wrap .line-1 {
+   background-color: #BE2026;  
+}
+
+.techninjas #thankyou-wrap .button-submit {
+    background: #3F2F3D;    
+}
+
+
+/** overrides for focusmax **/
+
+.focusmax .button-inside {
+    background-color: #36b9d7;
+}
+.focusmax .logo { 
+    margin-top: 0px !important;
+}
+
+
+.focusmax #thankyou-wrap .product-info .line-5 span {
+    color: #BE2026;
+} 
+
+
+.focusmax #thankyou-wrap .product-info .line-2 {
+    color: #36b9d7;
+} 
+
+.focusmax #thankyou-wrap .header-top .bottom-section h1 {
+    color: #36b9d7;
+}
+
+.focusmax #thankyou-wrap .progress-3.progress {
+    background-color: #36b9d7;
+}
+
+.focusmax #thankyou-wrap .coupon-wrap .line-1 {
+    background-color: #36b9d7;
+}
+
+.focusmax #thankyou-wrap .button-submit {
+    background: #36b9d7;
+}
+
+.focusmax #thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-blue.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+
+.focusmax #thankyou-wrap .percentage-wrap {
+    background: url("blue-arrow.png") center top no-repeat;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+
+
+
+/** overrides for testoboost **/
+
+.testoboost .button-inside {
+    background-color:  #3F2F3D;
+}
+.testoboost .logo { 
+    margin-top: 0px !important;
+}
+
+
+.testoboost #thankyou-wrap .product-info .line-5 span {
+    color: #ED1C24;
+} 
+
+
+.testoboost #thankyou-wrap .product-info .line-2 {
+    color: #ED1C24;
+} 
+
+.testoboost #thankyou-wrap .header-top .bottom-section h1 {
+    color: #ED1C24;
+}
+
+.testoboost #thankyou-wrap .progress-3.progress {
+    background-color: #ED1C24
+}
+
+.testoboost #thankyou-wrap .coupon-wrap .line-1 {
+    background-color: #ED1C24;
+}
+
+.testoboost #thankyou-wrap .button-submit {
+    background: #3F2F3D;    
+}
+
+.testoboost #thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-red.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+
+
+#thankyou-wrap .percentage-wrap {
+    color: white;
+    background: url("blue-arrow.png")center top no-repeat;
+    width: 85px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 10px;
+    padding-top: 7px;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+
+
+
+
+.lowcarbslim #thankyou-wrap .percentage-wrap {
+    background: url("purple-arrow.png") center top no-repeat;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+
+.lowcarbslim #thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-pink.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+
+/** overrides for dietadivina **/
+
+.dietadivina .button-inside {
+    background-color:  #F82E56;
+}
+.dietadivina .logo { 
+    margin-top: 0px !important;
+}
+
+
+.dietadivina #thankyou-wrap .product-info .line-5 span {
+    color: ##231F20;
+} 
+
+
+.dietadivina #thankyou-wrap .product-info .line-2 {
+    color: ##231F20;
+} 
+
+.dietadivina #thankyou-wrap .header-top .bottom-section h1 {
+    color: ##231F20;
+}
+
+.dietadivina #thankyou-wrap .progress-3.progress {
+    background-color: ##231F20
+}
+
+.dietadivina #thankyou-wrap .coupon-wrap .line-1 {
+    background-color: ##231F20;
+}
+
+.dietadivina #thankyou-wrap .button-submit {
+    background: #F82E56;    
+}
+
+.dietadivina #thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-pink-light.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+
+
+#thankyou-wrap .percentage-wrap {
+    color: white;
+    background: url("pink-arrow.png")center top no-repeat;
+    width: 85px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 10px;
+    padding-top: 7px;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+
+
+
+/** overrides for ezscraper **/
+
+.ezscraper .button-inside {
+    background-color:  #111744;
+    max-width: 100%;
+}
+.ezscraper .logo { 
+    margin-top: 0px !important;
+}
+
+
+.ezscraper #thankyou-wrap .product-info .line-5 span {
+    color: #2DB7ED;
+} 
+
+
+.ezscraper #thankyou-wrap .product-info .line-2 {
+    color: #2DB7ED;
+} 
+
+.ezscraper #thankyou-wrap .header-top .bottom-section h1 {
+    color: #2DB7ED;
+    font-weight: bold;
+}
+
+.ezscraper #thankyou-wrap .progress-3.progress {
+    background-color: #2DB7ED;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ezscraper #thankyou-wrap .coupon-wrap .line-1 {
+    background-color: #2DB7ED;
+}
+
+.ezscraper #thankyou-wrap .button-submit {
+    background: #111744;    
+}
+
+.ezscraper #thankyou-wrap .progress-2.progress {
+    background: url("progress-bar-grey-blue-ezscraper.jpg")right top -7px no-repeat;
+    background-size: 40px;
+}
+
+
+#thankyou-wrap .percentage-wrap {
+    color: white;
+    background: url("blue-arrow.png")center top no-repeat;
+    width: 85px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    font-size: 10px;
+    padding-top: 7px;
+    background-size: 130px;
+    background-position: -23px -50px;
+}
+
+
+@media (max-width: 576px) { 
+    .progress-bar .progress{
+        padding: 5px 0;
+        font-size: 18px;
+    }
+    .progress-3.progress{
+        width: 44%;
+    }
+    #thankyou-wrap .bottle-wrap{
+        width: 100%;
+    }
+    #thankyou-wrap .bottle-wrap img.bottle{
+        margin-bottom: 10px;
+    }
+    #thankyou-wrap .product-info{
+        width: 100%;
+        margin: 0;
+        padding: 0 30px;
+    }
+    .button-submit span{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .button-submit .left{
+        font-size: 40px;
+        margin-top: 5px;
+    }
+    .button-submit small {
+        font-size: 14px;
+    }
+}
+@media (max-width: 400px) { 
+    .progress-bar .progress{
+        font-size: 16px;
+    }
+    #thankyou-wrap .product-info .line-3{
+        font-size: 35px;
+    }
+    #thankyou-wrap .product-info .line-5{
+        font-size: 18px;
+    }
+    .button-submit span{
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .button-submit .left{
+        font-size: 38px;
+        margin-top: 0;
+    }
+    .button-submit small {
+        font-size: 12px;
+    }
+}
+
+
+/** some changes to be tested **/
+
+#claim-offer {
+    margin-top: 70px !important;
+}
+
+#thankyou-wrap .bottle-wrap img.bottle {
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .section-1 .header .logo img {
+        max-width: 80%;
+    }
+    .content .header {
+        height: 60px
+    }
+    .section-1 .header .satisfaction-seal img {
+        max-width: 60%;
+    }
+
+    #thankyou-wrap .header-top .bottom-section h1 {
+        line-height: 21px;
+        font-size: 24px;
+    } 
+
+    #thankyou-wrap .bottom-section p {
+        line-height: 23px;
+    }
+
+    .coupon #claim-offer {
+        display:inline-block;
+        color:#444;
+        border:2px solid #CCC;
+        background:#DDD;
+        box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+        cursor:pointer;
+        vertical-align:middle;
+        padding: 5px;
+        text-align: center;
+        
+    }
+
+    .coupon #claim-offer.line-1 {
+        width: 80%;
+        position: relative;
+        margin-top: 75px;
+        background-color: #2DB7ED;
+        color: white;
+
+    }
+
+    .coupon #claim-offer:active {
+    color:red;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.9);
+    }
+
+   #thankyou-wrap .bottle-wrap img.bottle { margin-top: 10px; }
+}
+
+/**  reset some select properties **/
+.select-wrapper select{
+    height: auto;
+    padding-top: 0;
+    font-size: 18px;
+
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper:after {
+	font-family: FontAwesome;
+  	content: "";
+  	font-size: 28px;
+  	position: absolute;
+  	top: 2px;
+  	right: 20px;
+  	color: #434B67;
+  	pointer-events: none;
+
+    background: url("arrow.png") no-repeat 96% 0;
+    height: 38px;
+    overflow: hidden;
+    width: 240px;
+
+}
+
